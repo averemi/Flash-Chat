@@ -6,6 +6,7 @@
 
 
 import UIKit
+import Firebase
 
 
 class LogInViewController: UIViewController {
@@ -26,7 +27,9 @@ class LogInViewController: UIViewController {
    
     @IBAction func logInPressed(_ sender: AnyObject) {
 
-        
+        if let email = emailTextfield.text, let password = passwordTextfield.text {
+            Auth.auth().signIn(withEmail: email, password: password, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
+            }
         //TODO: Log in the user
         
         

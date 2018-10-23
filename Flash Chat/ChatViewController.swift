@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class ChatViewController: UIViewController {
@@ -108,7 +109,19 @@ class ChatViewController: UIViewController {
         
         //TODO: Log out the user and send them back to WelcomeViewController
         
+        do {
+            try Auth.auth().signOut()
+            
+      //      navigationController?.popToRootViewController(animated: true) // to take the user from the chat view controller to the welcome view controller
+        }
+        catch {
+            print("error, there was a problem signing out")
+        }
         
+        guard (navigationController?.popToRootViewController(animated: true)) != nil else {
+            print("No View Controllers to pop off")
+            return
+        }
     }
     
 
