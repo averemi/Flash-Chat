@@ -330,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888" y="10.794602698650676"/>
+            <point key="canvasLocation" x="1887.2" y="10.344827586206897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kGX-IT-aXC">
@@ -358,6 +358,6 @@
         <image name="background1" width="1800" height="1192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rRW-Qd-PQi"/>
+        <segue reference="RuE-fI-2yI"/>
     </inferredMetricsTieBreakers>
 </document>
